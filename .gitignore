@@ -160,3 +160,5 @@ cython_debug/
 #.idea/
 
 failed_messages.log
+logs/*
+.vscode

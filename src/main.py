@@ -13,7 +13,7 @@ if __name__ == '__main__':
     while True:
         try:
             producer.produce('my-topic', key=f'{idx}', value='hello world')
-            producer.poll(1)
+            producer.poll()
             idx += 1
         except Exception as e:
             logging.error(e)
